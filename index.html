@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kiva - Open Source LRS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-900">
+    <header class="flex items-center justify-between p-6 shadow-md">
+      <div class="flex items-center space-x-3">
+        <div class="w-12 h-auto">
+          <svg
+            width="100%"
+            height="auto"
+            viewBox="0 0 221 110"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M30.6854 31.2798L19.6862 45.1032C19.5702 45.249 19.4924 45.3024 19.4708 45.3164C19.4465 45.3321 19.4293 45.339 19.4084 45.3444C19.3545 45.3583 19.2038 45.3744 18.9972 45.3023C18.7907 45.2301 18.6828 45.1236 18.6493 45.0792C18.6363 45.062 18.6271 45.0458 18.6179 45.0185C18.6097 44.994 18.5821 44.9038 18.5821 44.7175V14.8655H0V44.7175C0 62.8935 22.9097 70.896 34.2268 56.6731L54.4322 31.2798H30.6854Z"
+              fill="#6CD2BD"
+            />
+            <path
+              d="M0.467969 65.3472C0.162885 66.7279 0 68.1881 0 69.7208V83.1586H18.5821V69.7208C18.5821 69.5344 18.6097 69.4443 18.6179 69.4198C18.6271 69.3924 18.6363 69.3763 18.6493 69.3591C18.6828 69.3146 18.7907 69.2081 18.9972 69.136C19.2038 69.0639 19.3545 69.08 19.4084 69.0939C19.4293 69.0993 19.4465 69.1062 19.4708 69.1219C19.4924 69.1359 19.5702 69.1893 19.6862 69.3351L30.6854 83.1585H54.4322L40.2598 65.3472H0.467969Z"
+              fill="#008F97"
+            />
+            <path
+              d="M80.9675 83C79.8278 83 78.8367 82.5788 77.9943 81.7364C77.152 80.894 76.7308 79.903 76.7308 78.7633V31.4905C76.7308 30.3508 77.152 29.3597 77.9943 28.5174C78.8367 27.675 79.8278 27.2538 80.9675 27.2538H82.454C83.5937 27.2538 84.5848 27.675 85.4272 28.5174C86.2696 29.3597 86.6908 30.3508 86.6908 31.4905V60.1069C86.6908 60.1564 86.7155 60.1812 86.7651 60.1812H86.8394L98.1373 47.4711C99.9707 45.3899 102.3 44.3493 105.124 44.3493H108.246C109.039 44.3493 109.584 44.7209 109.881 45.4642C110.228 46.2075 110.129 46.8764 109.584 47.4711L95.9818 62.4854C95.734 62.7827 95.734 63.1048 95.9818 63.4517L109.733 79.8039C110.278 80.4481 110.352 81.1418 109.956 81.8851C109.609 82.6284 109.039 83 108.246 83H105.124C102.3 83 99.9955 81.9099 98.2116 79.7296L86.8394 65.9788C86.8394 65.9293 86.8146 65.9045 86.7651 65.9045C86.7155 65.9045 86.6908 65.9293 86.6908 65.9788V78.7633C86.6908 79.903 86.2696 80.894 85.4272 81.7364C84.5848 82.5788 83.5937 83 82.454 83H80.9675ZM124.708 83C123.568 83 122.577 82.5788 121.735 81.7364C120.892 80.894 120.471 79.903 120.471 78.7633V48.586C120.471 47.4463 120.892 46.4553 121.735 45.6129C122.577 44.7705 123.568 44.3493 124.708 44.3493H126.64C127.78 44.3493 128.771 44.7705 129.614 45.6129C130.456 46.4553 130.877 47.4463 130.877 48.586V78.7633C130.877 79.903 130.456 80.894 129.614 81.7364C128.771 82.5788 127.78 83 126.64 83H124.708ZM124.708 36.1732C123.568 36.1732 122.577 35.752 121.735 34.9096C120.892 34.0672 120.471 33.0762 120.471 31.9365V31.4905C120.471 30.3508 120.892 29.3597 121.735 28.5174C122.577 27.675 123.568 27.2538 124.708 27.2538H126.64C127.78 27.2538 128.771 27.675 129.614 28.5174C130.456 29.3597 130.877 30.3508 130.877 31.4905V31.9365C130.877 33.0762 130.456 34.0672 129.614 34.9096C128.771 35.752 127.78 36.1732 126.64 36.1732H124.708ZM150.938 78.9863L141.052 48.363C140.705 47.372 140.829 46.4553 141.424 45.6129C142.068 44.7705 142.91 44.3493 143.951 44.3493H146.181C147.419 44.3493 148.534 44.7457 149.525 45.5385C150.516 46.2818 151.161 47.2481 151.458 48.4373L158.891 77.2024C158.891 77.2519 158.916 77.2767 158.965 77.2767C159.015 77.2767 159.039 77.2519 159.039 77.2024L166.472 48.4373C166.77 47.2481 167.414 46.2818 168.405 45.5385C169.396 44.7457 170.511 44.3493 171.75 44.3493H173.682C174.723 44.3493 175.54 44.7705 176.135 45.6129C176.779 46.4553 176.928 47.372 176.581 48.363L166.695 78.9863C166.348 80.1755 165.655 81.1418 164.614 81.8851C163.623 82.6284 162.483 83 161.195 83H156.438C155.199 83 154.059 82.6284 153.019 81.8851C152.028 81.1418 151.334 80.1755 150.938 78.9863ZM200.981 64.4179C193.895 64.4179 190.352 66.5982 190.352 70.9588C190.352 72.5445 190.798 73.8328 191.69 74.8239C192.631 75.8149 193.821 76.3105 195.258 76.3105C198.082 76.3105 200.362 75.4433 202.096 73.709C203.83 71.9251 204.697 69.497 204.697 66.4248V65.0869C204.697 64.6409 204.474 64.4179 204.028 64.4179H200.981ZM192.582 83.7433C189.212 83.7433 186.413 82.6531 184.183 80.4728C182.002 78.243 180.912 75.369 180.912 71.8508C180.912 67.5397 182.548 64.1949 185.818 61.8164C189.138 59.4379 194.192 58.2487 200.981 58.2487H204.028C204.474 58.2487 204.697 58.0257 204.697 57.5797V56.9851C204.697 54.7057 204.152 53.12 203.062 52.2281C201.972 51.2866 200.039 50.8158 197.265 50.8158C194.391 50.8158 190.872 51.3361 186.71 52.3767C185.818 52.6245 185 52.4758 184.257 51.9308C183.514 51.3361 183.142 50.5681 183.142 49.6266C183.142 48.4869 183.489 47.4711 184.183 46.5791C184.876 45.6376 185.768 45.0678 186.859 44.8696C190.625 44.0272 194.168 43.606 197.488 43.606C203.83 43.606 208.265 44.7457 210.792 47.0251C213.319 49.3045 214.583 53.2935 214.583 58.992V78.7633C214.583 79.903 214.162 80.894 213.319 81.7364C212.527 82.5788 211.56 83 210.421 83H209.603C208.414 83 207.398 82.6036 206.556 81.8107C205.713 80.9684 205.267 79.9525 205.218 78.7633V77.7227C205.218 77.6731 205.193 77.6484 205.143 77.6484C205.044 77.6484 204.995 77.6731 204.995 77.7227C201.972 81.7364 197.834 83.7433 192.582 83.7433Z"
+              fill="#242021"
+            />
+          </svg>
+        </div>
+      </div>
+      <nav class="space-x-6">
+        <a href="#features" class="hover:underline">Features</a>
+        <a href="#tech" class="hover:underline">Technology</a>
+        <a href="#security" class="hover:underline">Security</a>
+        <a href="https://github.com/codetakt/kiva" class="hover:underline">GitHub</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+    </header>
+
+    <main class="px-6 py-12 max-w-5xl mx-auto">
+      <section class="text-center mb-16">
+        <h1 class="text-4xl font-extrabold mb-4">
+          Next-Gen xAPI 2.0 Compliant LRS
+        </h1>
+        <p class="text-lg text-gray-700">
+          Kiva is an open-source, encryption-enabled, high-availability Learning
+          Record Store.
+        </p>
+      </section>
+
+      <section id="features" class="mb-16">
+        <h2 class="text-2xl font-bold mb-4">Key Features</h2>
+        <ul class="list-disc pl-6 space-y-2 text-gray-800">
+          <li>Fully compliant with xAPI 2.0</li>
+          <li>Real-time statement processing</li>
+          <li>Support for distributed architecture</li>
+          <li>Privacy-first tracking design</li>
+        </ul>
+      </section>
+
+      <section id="tech" class="mb-16">
+        <h2 class="text-2xl font-bold mb-4">Technical Specifications</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <h3 class="font-semibold">API</h3>
+            <p class="text-gray-700">
+              RESTful / OAuth 2.0 compatible, xAPI 2.0 compliant
+            </p>
+          </div>
+          <div>
+            <h3 class="font-semibold">Storage</h3>
+            <p class="text-gray-700">
+              PostgreSQL / S3-compatible object storage
+            </p>
+          </div>
+          <div>
+            <h3 class="font-semibold">Event Handling</h3>
+            <p class="text-gray-700">
+              Kafka-based asynchronous statement processing
+            </p>
+          </div>
+          <div>
+            <h3 class="font-semibold">Analytics</h3>
+            <p class="text-gray-700">
+              Integrated with Elasticsearch for reporting
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="security" class="mb-16">
+        <h2 class="text-2xl font-bold mb-4">Security</h2>
+        <ul class="list-disc pl-6 space-y-2 text-gray-800">
+          <li>Statement encryption using AES-256</li>
+          <li>Role-based access control (RBAC)</li>
+          <li>Audit logging and tamper detection</li>
+          <li>GDPR and ISO/IEC 27001 compliant</li>
+        </ul>
+      </section>
+
+      <section id="contact" class="text-center">
+        <h2 class="text-2xl font-bold mb-4">Contact</h2>
+        <p class="text-gray-700 mb-6">
+          For more information or deployment inquiries, contact us via the form
+          or email below.
+        </p>
+        <a
+          href="mailto:contact@kiva-lrs.org"
+          class="inline-block bg-teal-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-teal-700"
+          >Contact via Email</a
+        >
+      </section>
+    </main>
+
+    <footer class="text-center text-sm text-gray-500 py-6">
+      © 2025 codeTakt Inc. This software is released under the MIT License.
+    </footer>
+  </body>
+</html>
